@@ -28,6 +28,7 @@ class _SlidingCardViewState extends State<SlidingCardView> {
     return SizedBox(
       height: MediaQuery.of(context).size.height * 0.55,
       child: PageView.builder(
+        // scrollDirection: Axis.vertical, // For Scrolling Vertically
         clipBehavior: Clip.none,
         controller: pageController,
         itemCount: demoCardData.length,
